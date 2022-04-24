@@ -45,6 +45,7 @@ import { UpdateAgentComponent } from './components/agent/update-agent/update-age
 import { ConsulterAgentComponent } from './components/agent/consulter-agent/consulter-agent.component';
 import { ConsulterCaissierComponent } from './components/caissier/consulter-caissier/consulter-caissier.component';
 import { ConsulterCaisseComponent } from './components/caisse/consulter-caisse/consulter-caisse.component';
+import { AcceuilComponent } from './acceuil/acceuil.component';
 
 @NgModule({
     imports: [
@@ -52,7 +53,7 @@ import { ConsulterCaisseComponent } from './components/caisse/consulter-caisse/c
             {
                 path: '', component: AppMainComponent,
                 children: [
-                    {path: '', component: DashboardComponent},
+                    {path: '', component: AcceuilComponent},
                     {path: 'ModePaiement', component: ModeComponent},
                     {path: 'add-mode', component: AddModeComponent},
                     {path: 'Update-Mode/:id', component: UpdateModeComponent},

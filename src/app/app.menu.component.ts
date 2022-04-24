@@ -12,7 +12,7 @@ import { AppMainComponent } from './app.main.component';
                         <li app-menuitem *ngFor="let child of item.items" [item]="child" [index]="i" role="none"></li>
                     </ul>
                 </li>
-            
+
             </ul>
         </div>
     `
@@ -28,7 +28,7 @@ export class AppMenuComponent implements OnInit {
             {
                 label: 'Home',
                 items:[
-                    {label: 'Dashboard',icon: 'pi pi-fw pi-home', routerLink: ['/modes']}
+                    {label: 'Dashboard',icon: 'pi pi-fw pi-home', routerLink: ['/']}
                 ]
             },
             {
